@@ -7,7 +7,7 @@
 //
 
 #import "OrderViewController.h"
-
+#import "DatabaseClass.h"
 @interface OrderViewController ()
 
 @end
@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [DatabaseClass sharedInstance];
+    [[DatabaseClass alloc] getAllValues:@"hello"];
 }
 
 - (void)didReceiveMemoryWarning

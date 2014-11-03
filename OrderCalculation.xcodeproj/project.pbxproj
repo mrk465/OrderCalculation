@@ -21,6 +21,8 @@
 		1FA8DEBF19E77DD200338EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA8DEA119E77DD100338EC3 /* UIKit.framework */; };
 		1FA8DEC719E77DD200338EC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA8DEC519E77DD200338EC3 /* InfoPlist.strings */; };
 		1FA8DEC919E77DD200338EC3 /* OrderCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8DEC819E77DD200338EC3 /* OrderCalculationTests.m */; };
+		1FA8DED319E77ECB00338EC3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA8DED219E77ECB00338EC3 /* libsqlite3.dylib */; };
+		1FA8DED619E77F8700338EC3 /* DatabaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8DED519E77F8700338EC3 /* DatabaseClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		1FA8DEC419E77DD200338EC3 /* OrderCalculationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrderCalculationTests-Info.plist"; sourceTree = "<group>"; };
 		1FA8DEC619E77DD200338EC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FA8DEC819E77DD200338EC3 /* OrderCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCalculationTests.m; sourceTree = "<group>"; };
+		1FA8DED219E77ECB00338EC3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1FA8DED419E77F8700338EC3 /* DatabaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseClass.h; sourceTree = "<group>"; };
+		1FA8DED519E77F8700338EC3 /* DatabaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA8DED319E77ECB00338EC3 /* libsqlite3.dylib in Frameworks */,
 				1FA8DEA019E77DD100338EC3 /* CoreGraphics.framework in Frameworks */,
 				1FA8DEA219E77DD100338EC3 /* UIKit.framework in Frameworks */,
 				1FA8DE9E19E77DD100338EC3 /* Foundation.framework in Frameworks */,
@@ -82,6 +88,8 @@
 		1FA8DE9119E77DD100338EC3 = {
 			isa = PBXGroup;
 			children = (
+				1FA8DED419E77F8700338EC3 /* DatabaseClass.h */,
+				1FA8DED519E77F8700338EC3 /* DatabaseClass.m */,
 				1FA8DEA319E77DD200338EC3 /* OrderCalculation */,
 				1FA8DEC219E77DD200338EC3 /* OrderCalculationTests */,
 				1FA8DE9C19E77DD100338EC3 /* Frameworks */,
@@ -101,6 +109,7 @@
 		1FA8DE9C19E77DD100338EC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FA8DED219E77ECB00338EC3 /* libsqlite3.dylib */,
 				1FA8DE9D19E77DD100338EC3 /* Foundation.framework */,
 				1FA8DE9F19E77DD100338EC3 /* CoreGraphics.framework */,
 				1FA8DEA119E77DD100338EC3 /* UIKit.framework */,
@@ -251,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA8DEAA19E77DD200338EC3 /* main.m in Sources */,
+				1FA8DED619E77F8700338EC3 /* DatabaseClass.m in Sources */,
 				1FA8DEB419E77DD200338EC3 /* OrderViewController.m in Sources */,
 				1FA8DEAE19E77DD200338EC3 /* OrderAppDelegate.m in Sources */,
 			);
